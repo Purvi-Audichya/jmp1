@@ -1,0 +1,215 @@
+body { margin:0; font-family:Arial,sans-serif; background:#fffdf5; }
+
+/* Banner */
+.banner { position:relative; text-align:center; color:white; }
+.banner-img { width:100%; height:300px; object-fit:cover; filter:brightness(70%); }
+.banner-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); animation:fadeIn 2s ease; }
+.banner-text h1 { font-size:2.5rem; margin:0; }
+.banner-text p { margin:0.3rem 0; }
+.tagline { font-weight:bold; }
+.quote { font-style:italic; color:#fef08a; }
+
+/* Cards */
+.cards{
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:20px;
+
+padding:20px;
+}
+@media(max-width:1200px){
+
+.cards{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+.card{
+
+background:
+linear-gradient(
+135deg,
+#fff7d1,
+#facc15
+);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.1);
+
+transition:.3s;
+
+text-align:center;
+
+min-height:260px;
+}
+
+.card:hover{
+
+transform:
+translateY(-8px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.2);
+
+}
+.cards{
+grid-template-columns:1fr;
+}
+
+}
+
+
+#bookGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.book-item {
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.book-item img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(box-shadow:0 2px 6px rgba(0,0,0,.2); }
+.book-item:hover { transform:scale(1.05); opacity:.9; }
+.book-item p { font-size:.8rem; margin-top:.5rem; }
+
+/* Latest */
+.latest { background:white; margin:1rem; padding:1rem; border-radius:1rem; box-shadow:0 4px 6px rgba(0,0,0,.1); }
+.latest h2 { color:#ca8a04; margin-bottom:1rem; }
+.latest-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1rem; }
+.latest-card { padding:1rem; border-radius:.75rem; cursor:pointer; text-align:center; font-weight:bold; background:#fef9c3; transition:transform .3s,background .3s; }
+.latest-card:hover { transform:scale(1.05); background:#fde68a; }
+
+/* Footer */
+.footer { background:linear-gradient(to right,#fde68a,#facc15); color:#78350f; display:flex; justify-content:space-around; padding:.5rem; position:fixed; bottom:0; width:100%; }
+.footer div { display:flex; flex-direction:column; align-items:center; font-size:.8rem; }
+.footer span { font-size:.7rem; }
+
+/* Animations */
+@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+.hidden { display:none; }
+.more-panel {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background: #fef9c3;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.more-panel a {
+  text-decoration: none;
+  color: #78350f;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.more-panel a:hover {
+  color: #eab308;
+}
+.more-cards {
+  display: flex;                /* horizontal alignment */
+  justify-content: center;      /* center them */
+  gap: 1rem;                    /* spacing between cards */
+  margin: 1.5rem 0;
+}
+
+.more-cards .card {
+  flex: 1;                      /* equal width */
+  max-width: 150px;             /* limit size */
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.more-cards .card:hover {
+  transform: scale(1.05);
+  background: #fde68a;
+}
+
+.more-cards p {
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+  color: #78350f;
+}
+.section-heading{
+text-align:center;
+font-size:34px;
+margin:20px 0;
+color:#b8860b;
+}
+
+.courses-section{
+padding:20px;
+}
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.course-card{
+background:linear-gradient(
+135deg,
+#fff9db,
+#facc15
+);
+.latest{
+padding:30px;
+}
+
+.latest-cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.contact-section{
+padding:30px;
+}
+
+.more-cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.contact-card{
+background:linear-gradient(
+135deg,
+#fff7d1,
+#facc15
+);
+
+padding:20px;
+
+border-radius:20px;
+
+text-align:center;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-6px);
+}

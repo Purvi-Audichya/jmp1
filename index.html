@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jitendra Pant App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Banner -->
+  <header class="banner">
+    <img src="cover.jpg" alt="Cover Image" class="banner-img" />
+    <div class="banner-text">
+     <h1>✨ Jitendra Pant</h1>
+      <p>Mentor • Trainer • Life Coach • Author</p>
+      <p class="tagline">Learn • Grow • Give • Make a Difference</p>
+      <p class="quote">“रास्ते बदल जाते हैं पर मंज़िल नहीं झुकती…”</p>
+    </div>
+  </header>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="🔍 Search books..." onkeyup="filterBooks()" />
+  </div>
+
+  <!-- Cards -->
+  <section class="cards">
+    <section class="courses-section">
+
+<h2 class="section-heading">📚 Courses</h2>
+
+<div class="course-grid">
+
+<div class="course-card">
+<h3>Operations Excellence</h3>
+
+<p>
+Operations Management<br>
+Kaizen<br>
+5S<br>
+Problem Solving<br>
+Quality<br>
+Continuous Improvement
+</p>
+
+<button onclick="window.location.href='tel:+919811030273'">
+Interested? Contact Jitendra
+</button>
+</div>
+
+<div class="course-card">
+<h3>Skill Development</h3>
+
+<p>
+Practical Skills for Students<br>
+Practical Skills for Professionals
+</p>
+
+<button onclick="window.location.href='tel:+919811030273'">
+Interested? Contact Jitendra
+</button>
+</div>
+
+<div class="course-card">
+<h3>21-Day Career Excellence Challenge</h3>
+
+<p>
+Ownership Mindset<br>
+Domain Knowledge<br>
+Time Management<br>
+Communication<br>
+Presentation<br>
+Networking<br>
+Resume Building<br>
+Leadership<br>
+Entrepreneurship
+</p>
+
+<button onclick="window.location.href='tel:+919811030273'">
+
+
+    <div class="card soft-yellow">
+      <h2>📖 Books</h2>
+      <p>22+ books (Motivational, Inspirational, Self-help)</p>
+      <button onclick="toggleBooks()">Show Books</button>
+      <div id="bookGrid" class="hidden grid">
+        <!-- Example entries -->
+
+    <div class="book-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgzASyUJgx6acWUOiZoWZ3s8hSiQSAvcpBTNvGWZOMQ&s
+
+" alt="First Vital Step" />
+<p><a href="https://www.amazon.in/dp/B0CV737P66" target="_blank">First Vital Step Towards Operations Excellence</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwltwWSK_EZ5i-TX-G7tsXrUHFNoitqpa_yvLLVb2B8A&s
+
+
+" alt="Doing" />
+<p><a href="https://amzn.in/d/02sz7ET2" target="_blank">Doing: Do What You Say, and Say What You Do</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://m.media-amazon.com/images/I/51vbVa79eDL.jpg
+
+
+" alt="Baby Mira’s Memoir" />
+<p><a href="https://amzn.in/d/01GI76X8" target="_blank">Baby Mira’s Eight-Week Memoir</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXWHn6IC-C-BNTgr3k5xg_G3bCfJ3ShFhKVT4R8s855A&s
+
+" alt="Don't Blame" />
+<p><a href="https://amzn.in/d/062hbWFO" target="_blank">Don't Blame: If You Have To Blame, Blame Yourself</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPejE07A6eZQArlq8STPWE7GXtgGNNhTKt1C3ud78AA&s
+
+
+" alt="Time Management" />
+<p><a href="https://amzn.in/d/09PlrNDL" target="_blank">Time Management</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0T0Wz6DnMAeBvMpVeeda5O3Rh11vSM_uFEQJX6HVw3g&s
+
+
+" alt="Operations Management Demystified" />
+<p><a href="https://amzn.in/d/08P1uX19" target="_blank">Operations Management Demystified</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg2VqGURvtOVwIM2W-moDugGeX4unPt8kiT6EWRTeZCw&s
+
+
+" alt="Imagination Across Generations" />
+<p><a href="https://amzn.in/d/04Z3KJXQ" target="_blank">Imagination Across Generations</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJ30mWvcEU2GosYJbvyxz7mE41m789s4SOaaoS48ofA&s
+
+" alt="Smile Rebuilt" />
+<p><a href="https://amzn.in/d/02VjBIwp" target="_blank">Smile Rebuilt</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNj6XDtS4hCnH2T-41sERpzHLl0PO4FSsbdRTaSHexNQ&s
+
+
+" alt="Trauma Of Falling Alone" />
+<p><a href="https://amzn.in/d/0ipnRxj2" target="_blank">Trauma Of Falling Alone</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAoVg0IhYCRK8QL_EMK1cL_aSPmfMd1xMLVxTobBZB-A&s
+
+
+" alt="Wisdom in Verses" />
+<p><a href="https://www.amazon.in/Wisdom-Verses-Grandfathers-Jitendra-M-Pant-ebook/dp/B0CV7KGLFR" target="_blank">Wisdom in Verses</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwhTtMJDlV4W7tlOxA2zedMVG4eAtvbNBnjRiHzsoDDQ&s
+
+
+" alt="Cost Cut At Every Cost" />
+<p><a href="https://www.amazon.in/Cost-Cut-At-Every-Bottom-ebook/dp/B0FL88BCZY" target="_blank">Cost Cut At Every Cost</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xuV5-IgTF6_5-7S5Z9pdbbLkcFOlxhKuooVnYlJQAw&s
+
+
+" alt="No: Say No, Be Happy" />
+<p><a href="https://www.amazon.in/Joy-Saying-No-Freedom-Boundaries-ebook/dp/B0CV5X2SB1" target="_blank">No: Say No, Be Happy</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKFqDYS_S2gE_7y4i-ornftC6eBjOnZXiGRm7KUqHb1g&s
+
+
+" alt="Go to Gemba" />
+<p><a href="https://amzn.in/d/05wKQUMH" target="_blank">Go to Gemba</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR74AGS5kXLx0qGJRVtaRoPlSDwX0ZDDfITPPH4ehbM4g&s
+
+
+" alt="Confidence Building" />
+<p><a href="https://amzn.in/d/0716l14t" target="_blank">Confidence Building</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8m3rSIWB0UGsYeb-UcGq-7aBIiXq0NUu3BGLPd8kPg&s
+
+
+" alt="Nano Insights" />
+<p><a href="https://amzn.in/d/0gPJ3SM8" target="_blank">Nano Insights</a></p>
+</div>
+
+<div class="book-item">
+<img src="
+
+
+" alt="Born Again at 75" />
+<p><a href="https://amzn.in/d/0dQjPoTr" target="_blank">Born Again at 75</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUeJnPwT1S8wTrXpMFGhY8Aao0czXXpy-3vLtZAgJZFQ&s=10
+
+
+" alt="25 Lessons From Uncommon Thoughts" />
+<p><a href="https://amzn.in/d/08gFccBv" target="_blank">25 Lessons From Uncommon Thoughts</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Oze8S2hvsEP9J7hgA1dusC0RXQgXD2tIxFKHSz34hw&s
+
+
+" alt="Anyone Who Can Walk" />
+<p><a href="https://amzn.in/d/0716l14t" target="_blank">Anyone Who Can Walk: Is My Fitness Hero</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhzKf1tPTbNkH3hsJFXIw2Gyo9iVw9P1iDwqjDcwQqOw&s
+
+
+" alt="Problem Solving" />
+<p><a href="https://www.amazon.in/PROBLEM-SOLVING-techniques-everyone-understand-ebook/dp/B0DD6NCMSR" target="_blank">Problem Solving: Techniques Everyone Can Understand</a></p>
+</div>
+
+<div class="book-item">
+<img src="
+
+
+" alt="Joy of Saying No" />
+<p><a href="https://amzn.in/d/0716l14t" target="_blank">Joy of Saying No</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYLzlHfnMDChJXYAvts9ljwAlivibA1tPB8omNjBibw&s
+
+
+" alt="Trauma Of Falling Alone: A Mind That Fights" />
+<p><a href="https://www.amazon.in/Trauma-Falling-Alone-Helplessness-Fights-ebook/dp/B0G48KW57B" target="_blank">Trauma Of Falling Alone: A Mind That Fights</a></p>
+</div>
+
+<div class="book-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWvZ3Yu2SXaKZBgqErc4k2afV2Aglctxuvj8RW4h7PQ&s
+
+
+" alt="Imagination Across Generations: Three Authors One Story" />
+<p><a href="https://amzn.in/d/04Z3KJXQ" target="_blank">Imagination Across Generations: Three Authors One Story</a></p>
+</div>
+
+</div>
+</div>
+
+    <div class="card soft-yellow">
+      <h2>✍️ Writing</h2>
+      <p>Articles, poems & stories (Experiences, Motivational thoughts)</p>
+      <button onclick="openLink('https://medium.com')">Read & Explore</button>
+    </div>
+
+    <div class="card soft-yellow">
+      <h2>❤️ JMPS Foundation</h2>
+      <p>Education & healthcare initiatives (Helping children, women, elderly)</p>
+      <button onclick="openLink('https://www.jmpsfoundation.org')">Know More</button>
+    </div>
+  </section>
+
+  <!-- Latest -->
+  <section class="latest">
+   
+
+<h2>🌟 Latest from Jitendra Pant</h2>
+
+<div class="latest-cards">
+
+<div class="latest-card">
+📘
+<p>Born Again at 75</p>
+</div>
+
+<div class="latest-card">
+🧠
+<p>Becoming Mindset Coach</p>
+</div>
+
+<div class="latest-card">
+🌅
+<p>Copied</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact-section">
+
+<h2>Connect With Me</h2>
+
+<div class="more-cards">
+
+<div class="contact-card">
+📧
+<p>Email</p>
+</div>
+
+<div class="contact-card">
+📞
+<p>Call</p>
+</div>
+
+<div class="contact-card">
+🌐
+<p>Website</p>
+</div>
+
+<div class="contact-card">
+💼
+<p>LinkedIn</p>
+</div>
+
+</div>
+
+</section>
+</div>
+
+  </section>
+
+<footer class="footer">
+  <div>🏠 <span>Home</span></div>
+  <div>📚 <span>Learn</span></div>
+  <div>📖 <span>Books</span></div>
+  <div>✍️ <span>Writing</span></div>
+  <div>❤️ <span>JMPS</span></div>
+  <div class="more" onclick="toggleMore()">➕ <span>More</span></div>
+</footer>
+
+<!-- Hidden More Panel -->
+<div id="morePanel" class="hidden more-panel">
+  <a href="mailto:jitendra@example.com">📧 Email</a>
+  <a href="tel:+919811030273">📞 Call</a>
+  <a href="https://www.jmpsfoundation.org" target="_blank">🌐 Website</a>
+  <a href="https://www.linkedin.com/in/jitendrapant" target="_blank">💼 LinkedIn</a>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
